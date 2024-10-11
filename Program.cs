@@ -8,8 +8,8 @@ public class Program
     {
         Console.WriteLine("What is your name?");
         string name = Console.ReadLine();
-        Console.WriteLine("What is your age?");
-        int age = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("What is your age in 5 years?");
+        int futureage = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("What is your eye color?");
         string eyecolor = Console.ReadLine();
         Console.WriteLine("What is your shoe size?");
@@ -30,6 +30,11 @@ public class Program
         string dreamjob = Console.ReadLine();
         Console.WriteLine("How many sibilings do you have?");
         int sibilings = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Hello, " + name + ". You are " + age + " years old. You have beautiful " + eyecolor + " eyes. Your shoe size is " + shoesize + " and your favorite color is " + favcolor + ". Your favorite movie/tv show is " + favmovie + ". Your favorite teacher is NOT Mr. Martinez, but actually" + favteacher + ", and your favorite class is " + favclass + ". Your favorite holiday is, " + favholiday + ", and you love " + favseason + ". Your dream job is " + dreamjob + ". You have " + sibilings + " sibilings.(I'm sorry about that btw).");
+        int age = futureage - 5;
+
+        Console.WriteLine("Hello, " + name + ". You are " + age + " years old. You have beautiful " + eyecolor + " eyes. Your shoe size is " + shoesize +
+         " and your favorite color is " + favcolor + ". Your favorite movie/tv show is " + favmovie + ". Your favorite teacher is NOT Mr. Martinez, but actually"
+          + favteacher + ", and your favorite class is " + favclass + ". Your favorite holiday is, " + favholiday + ", and you love " + favseason + ". Your dream job is "
+           + dreamjob + ". You have " + sibilings + " sibilings.(I'm sorry about that btw).");
     }
 }
